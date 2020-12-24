@@ -14,7 +14,7 @@ access the data related to particular university by students and teachers and al
 WiCS will also have real time quiz at the end of each lectures depending on the teachers.</p>
 
 <h3>Key benefits and Outcomes</h3>
-<p>the product will allow its user to use the cloud service to take their necessary lectures of their teachers via remote access, it also remove desktop machine with mobile/tablets to connect wirelessly with projector without any needs of PC’s equipment moving towards compact era, this will impact on the traditional educational system to switch to virtual learning system. </p>
+<p>This app will allow its user to use the cloud service to take their necessary lectures of their teachers via remote access, it also eliminate or remove desktop machine with mobile/tablets to connect wirelessly with projector without any needs of PC’s equipment moving towards compact era, this will impact on the traditional educational system to switch to virtual learning system. </p>
 
 
 <h3>Snapshots</h3>
