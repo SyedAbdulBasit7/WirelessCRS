@@ -20,63 +20,63 @@ WiCS will also have real time quiz at the end of each lectures depending on the 
 <h3>Snapshots</h3>
 <br>
 
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-29-45.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-30-17.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-30-38.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-30-50.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-31-30.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-32-45.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-33-12.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-33-21.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-34-26.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-34-32.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-34-57.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-34-58.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-35-49.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-36-01.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-36-13.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-36-26.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-36-31.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-36-36.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-36-41.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-37-02.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-37-44.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-39-16.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-39-24.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-39-50.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-40-02.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-40-40.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-40-45.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-41-22.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-41-32.png">
 <br>
-<img src="">
+<img src="/Snapshots/Capture+_2020-12-24-15-41-49.png">
 <br>
