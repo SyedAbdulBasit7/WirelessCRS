@@ -1,4 +1,4 @@
-<h1>Wireless Class Room Service</h1>
+<h1>Wireless Class Room Service (Final Year Project)</h1>
 <p>I created this app in my <b>final year project</b>
 
 <h3>Objective</h3>
@@ -12,6 +12,10 @@ Access University file server on the cloud. This app allow you to use screen rec
 <p>To enhance the interaction between teacher and students in the modern era of mobile phones we will be providing this application to remotely 
 access the data related to particular university by students and teachers and allow teachers to record the lectures live. 
 WiCS will also have real time quiz at the end of each lectures depending on the teachers.</p>
+
+<h3>Key benefits and Outcomes</h3>
+<p>the product will allow its user to use the cloud service to take their necessary lectures of their teachers via remote access, it also remove desktop machine with mobile/tablets to connect wirelessly with projector without any needs of PC’s equipment moving towards compact era, this will impact on the traditional educational system to switch to virtual learning system. </p>
+
 
 <h3>Snapshots</h3>
 <br>
