@@ -1,0 +1,279 @@
+<resources>
+    <string name="app_name">WirelessCRS</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="department">
+        <item>Computer Science</item>
+        <item>Software Engineering</item>
+    </string-array>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="hint_email">Please Enter Your Email Here:</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <!--    //whiteboard string-->
+    <string name="here_is_your_canvas">Here is your canvas. Start to paint!</string>
+    <string name="color">Color</string>
+    <string name="emboss">Bold</string>
+    <string name="blur">Blur</string>
+    <string name="brush_size">Brush size</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="clear_all">Erase entire foreground</string>
+    <string name="fill_background_with_color">Fill background with color</string>
+    <string name="your_selected_size_is">Selected size: %1$d</string>
+    <string name="choose_width">Brush size</string>
+    <string name="select">Select</string>
+    <string name="open_image">Open image as background</string>
+    <string name="ok">OK</string>
+    <string name="pick_color">Pick a Color</string>
+    <string name="select_image_to_open">Select image to open</string>
+    <string name="extract_color">Extract a color</string>
+    <string name="color_extracted">New color extracted</string>
+    <string name="saved_your_location_to">Saved %1$s</string>
+    <string name="tap_to_extract_color">Tap anywhere to extract a color</string>
+    <string name="continue_">Continue</string>
+    <!--    reminder-->
+    <string name="title_activity_add_reminder">Add Reminder</string>
+    <string name="title_activity_edit_reminder">Edit Reminder</string>
+
+    <string name="add_reminder">Reminder</string>
+    <string name="details">Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="repeat_no">Repetition Interval </string>
+    <string name="repeat_type">Type of Repetitions</string>
+
+    <string name="action_discard_reminder">Discard Reminder</string>
+    <string name="action_save_reminder">Save Reminder</string>
+
+    <string name="no_reminders">Click on the plus button below to begin creating your reminders!</string>
+    <!--    quiz-->
+    <string name="Welcome">Welcome back, User</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="text">"Terms &amp; Conditions"</string>
+    <string name="title_activity_UPdate">Update Details</string>
+    <string name="title_activity_tests">Tests</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="College_Choice">
+        <item>Monday-Tuesday</item>
+        <item>Wednesday-Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="Branch_Choice">
+        <item>ICS</item>
+        <item>Computer Programming</item>
+        <item>Computer Architecture and Organization</item>
+        <item>Object Oriented Programming</item>
+        <item>Data Structure</item>
+        <item>Operating System</item>
+        <item>System Analysis and Design</item>
+        <item>Database Management System</item>
+        <item>Web Programming Language</item>
+        <item>Software Engineering</item>
+        <item>Artificial Intelligence</item>
+        <item>Machine Learning</item>
+        <item>Mobile Application and Development</item>
+    </string-array>
+    <string-array name="Sem_Choice">
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+        <item>VII</item>
+        <item>VIII</item>
+    </string-array>
+    <!--    login-->
+    <string name="Email_Address">please enter your email</string>
+    <string name="Password">Exam@#123</string>
+    <string name="Con_Password">Password do not match</string>
+    <string name="Name">Enter Your Name</string>
+    <string name="age">Age greater than 10 </string>
+    <string name="email_unverified">Email verification not done.Check your email.</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="email_sent">Verification email is sent.Check your email.</string>
+    <!--    lectures-->
+    <!--    <string name="navigation_drawer_open">Open navigation drawer</string>-->
+    <!--    <string name="navigation_drawer_close">Close navigation drawer</string>-->
+    <string name="nav_app">App</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="nav_bookmarks">Bookmarks</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="unable_to_load_files0">Unable to access files <node>&#x1f612;</node></string>
+    <string name="unable_to_load_files1">The directory might also be empty.</string>
+    <string name="nav_path">Open Path</string>
+    <string name="okay">@android:string/ok</string>
+    <string name="cancel">@android:string/cancel</string>
+    <string name="invalid_path">Invalid path! Only absolute paths pointing to a directory please.</string>
+    <string name="add_bookmark">Add Bookmark</string>
+    <string name="nav_bug_report">Report Bug</string>
+    <string name="share_file">Share File</string>
+    <string name="pref_show_toast_cd">Show Toast on directory change</string>
+    <string name="pref_show_toast_cd_desc">When loading a new directory, a toast will be shown.</string>
+    <string name="toast_cd_new_dir">New Directory:&#160;</string>
+    <string name="loading">Loading…</string>
+    <string name="pref_home_dir">Home Directory</string>
+    <string name="pref_home_dir_desc">The home directory where the App launches at.</string>
+    <string name="pref_bookmarks">Bookmarks</string>
+    <string name="pref_bookmarks_desc">Edit your bookmarks.</string>
+    <string name="no_app_to_handle_file">No App found to handle this file!</string>
+    <string name="empty_directory">Directory is empty!</string>
+    <string name="bookmark_this_folder">Use current folder</string>
+    <string name="bookmark_set_path">Input bookmark path</string>
+    <string name="pref_bookmark_corrent_folder">Bookmark current folder</string>
+    <string name="pref_bookmark_corrent_folder_desc">Don\'t prompt bookmark path when adding a bookmark.</string>
+    <string name="path_input_hint">Absolute paths only!</string>
+    <string name="pref_header_unit">Unit to use in header</string>
+    <string name="pref_header_unit_desc">MiB or GiB</string>
+    <string name="pref_header_unit_default_value" translatable="false">@string/pref_header_unit_m_value</string>
+    <string name="pref_header_unit_m_value" translatable="false">m</string>
+    <string name="pref_header_unit_g_value" translatable="false">g</string>
+    <string name="pref_header_unit_g" translatable="false">Gibibyte</string>
+    <string name="pref_header_unit_m" translatable="false">Mebibyte</string>
+    <string name="pref_cat_ui" translatable="false">UI</string>
+    <string name="pref_cat_app">Application</string>
+    <string name="copy">Copy</string>
+    <string name="op_destination">Destination</string>
+    <string name="err_activity_null">Unable to register context menu</string>
+    <string name="warn_file_exists_title">File exists</string>
+    <string name="warn_file_exists_msg">The existing file will be overwritten. Are you sure that you want to continue?</string>
+    <string name="yes">@android:string/yes</string>
+    <string name="delete">Delete</string>
+    <string name="warn_delete_msg">Are you sure that you want to delete: </string>
+    <string name="move">Move</string>
+    <string name="rename">Rename</string>
+    <string name="name_input_hint">Enter new directory name</string> <!-- It's a directory -->
+    <string name="enter_new_file_name">Enter new file name</string> <!-- For file -->
+    <string name="new_directory">New Directory</string>
+    <string name="new_file">New File</string>
+    <string name="err_file_exists">The specified file already exists!</string>
+    <string name="err_unable_to_mkdir">Unable to create directory!</string>
+    <string name="file_icon_desc">Icon that shows if the element is a file or a directory.</string>
+    <string name="context_btn_desc">Button that opens the file operations context menu.</string>
+    <string name="action_reload_view">Reload</string>
+    <string name="err_deleting_element">Unable to delete!</string>
+    <string name="err_empty_input">Input may not be empty!</string>
+    <string name="pref_bookmark_deletion">Bookmark edit mode</string>
+    <string name="pref_bookmark_corrent_deletion_desc">When activated, delete and edit buttons are shown next to each bookmark.</string>
+    <string name="pref_filename_length">Maximum filename length</string>
+    <string name="pref_filename_length_desc">File names will be concatenated at this length and above.</string>
+    <string name="pref_header_path_length">Max length of header path</string>
+    <string name="pref_header_path_length_desc">The path will bew shortened from the front from this length.</string>
+    <string name="pref_header_path_length_default" translatable="false">27</string>
+    <string name="pref_version">App Version</string>
+    <string name="pref_sortby_value_default" translatable="false">@string/pref_sortby_value_name_asc</string>
+    <string name="pref_sortby_title">File sort param</string>
+    <string name="pref_sortby_desc">The files in the file view will be sorted by this property.</string>
+    <string name="pref_sortby_text_name_asc">Name (Ascending)</string>
+    <string name="pref_sortby_text_name_desc">Name (Descending)</string>
+    <string name="pref_sortby_text_date_asc">Date (Ascending)</string>
+    <string name="pref_sortby_text_date_desc">Date (Descending)</string>
+    <string name="pref_sortby_value_name_asc" translatable="false">namea</string>
+    <string name="pref_sortby_value_name_desc" translatable="false">named</string>
+    <string name="pref_sortby_value_date_asc" translatable="false">datea</string>
+    <string name="pref_sortby_value_date_desc" translatable="false">dated</string>
+    <string name="pref_context_for_ops_desc">When activated you need to navigate to the destination path.</string>
+    <string name="pref_context_for_ops">Don\'t prompt for destination path.</string>
+    <string name="pref_context_for_ops_toast_desc">Show toast when adding a file to the operations context.</string>
+    <string name="pref_context_for_ops_toast">Show toast on file operation</string>
+    <string name="file_added_to_context">Added file to operation context:&#160;</string>
+    <string name="action_paste">Paste</string>
+    <string name="switching_op_mode">Switching operation mode. Queue reset.</string>
+    <string name="action_clear_op_context">Clear operation</string>
+    <string name="extract">Extract</string>
+    <string name="a11y_desc_edit">Edit Item</string>
+    <string name="a11y_desc_delete">Delete Item</string>
+    <string name="copy_path">Copy Path</string>
+    <string name="file_location">File Location</string>
+    <string name="new_zip_file">New ZIP FIle</string>
+    <string name="add_to_zip">Add to ZIP file</string>
+    <string name="create_zip_file">Create ZIP File</string>
+    <string name="unable_to_create_zip_file">Unable to create ZIP file! (IOException)</string>
+    <string name="err_invalid_input_zip">Invalid input for file name.</string>
+    <string name="no">No</string>
+    <string name="extract_in_this_directory_prompt_text">Do you want to extract the archive into this directory?\n\nIf you click no, you can navigate to another directory and select \'Extract\' from the menu.</string>
+    <string name="pref_always_extract_in_current_folder">Always extract in current directory</string>
+    <string name="pref_always_extract_in_current_folder_desc">When activated, all archives will be extracted in the current directory.</string>
+    <string name="free">free</string>
+    <string name="unable_to_recognize_archive_format">Unable to recognize archive format.</string>
+    <string name="action_settings">@string/settings</string>
+    <string name="type_rar">Rar</string>
+    <string name="type_zip">Zip</string>
+    <string name="type_tar">Tar</string>
+    <string name="type_p7z">7Zip</string>
+    <string name="type_tgz">tar.gz</string>
+    <string name="type_unknown">Unknown</string>
+    <string name="invalid_operation">Invalid Operation</string>
+    <string name="backup_quota_exceeded_title">Backup Quota Exceeded</string>
+    <string name="backup_quota_exceeded_message">Unable to create cloud backup. Quota exceeded.</string>
+    <string name="yes_and_remember">Yes, Forever</string>
+    <string name="title_activity_preference">@string/settings</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_header_ui">UI</string>
+    <string name="pref_header_analytics">Analytics</string>
+    <string name="pref_cat_toasts">Toasts</string>
+    <string name="pref_crash_reporting_toast">Crash Reporting</string>
+    <string name="pref_crash_reporting_desc">Just FYI, you can\'t turn this off (for any Google Play app)</string>
+    <string name="pref_performance_reporting_title">Performance Reporting</string>
+    <string name="pref_performance_reporting_desc">Measures the time it takes to complete various stuff. (like creating and extracting archives, etc.)</string>
+    <string name="pref_zips_explorable">Explore archives by default</string>
+    <string name="pref_zips_explorable_desc">On single tap, archives will be handled like folders.</string>
+    <string name="explore">Explore</string>
+    <string name="only_browsing_in_archives">Only directories can be accessed when inside an archive.</string>
+    <string name="err_already_at_file_root">You are already in the root directory. Can\'t go up any further.</string>
+    <string name="notif_update_title">lrkFM: New Update Available!</string>
+    <string name="notif_update_content">New version available: </string>
+    <string name="pref_cat_notifications">Notification</string>
+    <string name="pref_update_notification_desc">Shows a notification when a new version is available on the PlayStore.</string>
+    <string name="pref_update_notification_title">Update Notification</string>
+    <string name="err_filename_length_lower_than_four">Error: Maximum filename length must be higher than four characters. It was set to this value.</string>
+    <string name="extracting">Extracting…</string>
+    <string name="extracting_detail">Extracting:</string>
+    <string name="creating">Creating…</string>
+    <string name="creating_detail">Creating:</string>
+    <string name="unable_to_extract_archive">Unable to extract archive! Is (one of) the destination(s) already existing?</string>
+    <string name="open_with">Open With…</string>
+    <string name="choose_application">Choose Application…</string>
+    <string name="only_one_app_to_handle_file">Only one app to handle this file found!</string>
+    <string name="dialog_icon_desc">Dialog icon.</string>
+    <string name="pref_context_toasts_vibrating">Vibrating Toasts</string>
+    <string name="pref_context_toasts_vibrating_desc">Allow vibration for some Toasts.</string>
+    <string name="moving">Moving…</string>
+    <string name="moving_detail">Moving:</string>
+    <string name="deleting">Deleting…</string>
+    <string name="deleting_detail">Deleting:</string>
+    <string name="copying">Copying…</string>
+    <string name="copying_detail">Copying:</string>
+    <string name="archive">Archive</string>
+    <string name="pref_always_show_intro">Always show intro</string>
+    <string name="pref_always_show_intro_desc">Always show intro even if it\'s not the first launch.</string>
+    <string name="error_content_uri">Sorry, the app can not yet parse content:// URIs.</string>
+    <string name="restart_required_title">Restart Required</string>
+    <string name="restart_required_message">Changing this setting requires a restart of lrkFM.</string>
+    <string name="a11y_desc_logo">App Logo</string>
+    <string name="file_already_selected">File already selected!</string>
+    <string name="action_copy">Copy…</string>
+    <string name="action_move">Move…</string>
+    <string name="action_delete">Delete…</string>
+    <string name="empty" translatable="false" />
+    <string name="warn_delete_mult_msg_start">Are you sure that you want to delete</string>
+    <string name="warn_delete_mult_msg_end">file(s)?</string>
+    <string name="err_deleting_element_mult">Error deleting:</string>
+    <string name="pref_header_notifications_toasts"><![CDATA[Notifications & Toasts]]></string>
+    <string name="pref_show_menu_button">Show menu button</string>
+    <string name="pref_show_menu_button_desc">When active, the checkboxes will be replaced with menu buttons.</string>
+    <string name="pref_vibration_length_default" translatable="false">120</string>
+    <string name="pref_vibration_length">Vibration Length</string>
+    <string name="pref_vibration_length_desc">Configure the length of vibration when toasts appear. Currently:</string>
+    <string name="pref_vibration_length_desc_init">Configure the length of vibration when toasts appear.</string>
+</resources>

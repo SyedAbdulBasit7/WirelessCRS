@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth_Controller.login"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:background="@drawable/wics_background_mobile">
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/my_wics"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/grey"
+            android:textSize="30sp"
+            android:drawableLeft="@drawable/ic_person_white_24dp"
+            android:ems="10"
+            android:drawablePadding="12dp"
+            android:background="@drawable/ed_back"
+            />
+        <EditText
+            android:id="@+id/pass_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/grey"
+            android:textSize="30sp"
+            android:drawableLeft="@drawable/ic_lock_white_24dp"
+            android:ems="10"
+            android:drawablePadding="12dp"
+            android:background="@drawable/ed_back"
+            />
+        <CheckBox
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#fff"
+            android:text="Remember me "
+            android:textSize="18px"
+            android:padding="8dp"
+            />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:text="Log in"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_circular"
+            android:layout_marginTop="40dp"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_signup"
+            android:text="Sign up"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            android:padding="10dp"
+            android:background="@drawable/circular_coloured_button"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget your Password? "
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loader1"
+        style="@style/AVLoadingIndicatorView.Large"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="80dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:indicatorColor="@android:color/holo_orange_light"
+        app:indicatorName="BallScaleMultipleIndicator" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

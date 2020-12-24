@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:menuCategory="container">
+        <item android:id="@+id/lect_overflow_new_file"
+            android:title="@string/new_file"
+            app:showAsAction="never" />
+        <item android:id="@+id/lect_new_directory"
+            android:title="@string/new_directory"
+            app:showAsAction="never"/>
+        <item android:id="@+id/lect_action_paste"
+            android:title="@string/action_paste"
+            app:showAsAction="never"
+            android:visible="false"/>
+        <item android:id="@+id/lect_action_copy"
+            android:title="@string/action_copy"
+            app:showAsAction="never"
+            android:visible="false"/>
+        <item android:id="@+id/lect_action_move"
+            android:title="@string/action_move"
+            app:showAsAction="never"
+            android:visible="false"/>
+        <item android:id="@+id/lect_action_delete"
+            android:title="@string/action_delete"
+            app:showAsAction="never"
+            android:visible="false"/>
+        <item android:id="@+id/lect_action_clear_op_context"
+            android:title="@string/action_clear_op_context"
+            app:showAsAction="never"
+            android:visible="false"/>
+        <item android:id="@+id/lect_action_reload_view"
+            android:title="@string/action_reload_view"
+            app:showAsAction="never"/>
+    </group>
+
+</menu>

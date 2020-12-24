@@ -1,0 +1,131 @@
+package com.example.wirelesscrs.screen_record.Dialog;
+
+import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.content.Context;
+import android.os.Environment;
+import android.util.SparseBooleanArray;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.wirelesscrs.screen_record.Activity.MainActivity;
+import com.example.wirelesscrs.screen_record.Adapter.CustomAdapter;
+import com.example.wirelesscrs.screen_record.Model.Item;
+import com.example.wirelesscrs.R;
+
+import java.io.File;
+import java.util.List;
+
+import static com.example.wirelesscrs.screen_record.Activity.MainActivity.listString;
+
+public class DeleteDialog {
+
+    private MainActivity mainActivity;
+
+    public static void adapterDelDialog(final int position, final Context context, final List<Item> arraylist, final CustomAdapter adapter) {
+        final Dialog dialog = new Dialog(context);
+        View mylayout = LayoutInflater.from(context).inflate(R.layout.custom_dialog_delete, null);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(true);
+        dialog.setContentView(mylayout);
+
+        Button btnNo = (Button) dialog.findViewById(R.id.srv_btnNo);
+        Button btnYes = (Button) dialog.findViewById(R.id.srv_btnYes);
+
+        btnNo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                File file = new File(Environment.getExternalStorageDirectory() + "/Screen Recording/" + listString.get(position));
+                file.delete();
+                Toast.makeText(context, "Video deleted successfully",
+                        Toast.LENGTH_LONG).show();
+                arraylist.remove(position);
+                adapter.remove(position);
+//                adapter.notifyDataSetChanged();
+//                adapter.removeItem(position);
+                dialog.dismiss();
+            }
+        });
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.dialog);
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation3;
+        dialog.show();
+    }
+
+    public static void MainDelDialog(final Context context, final CustomAdapter adapter1, final List<Item> arraylist, final MainActivity mainActivity) {
+        final Dialog dialog = new Dialog(context);
+        View mylayout = LayoutInflater.from(context).inflate(R.layout.custom_dialog_delete, null);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(true);
+        dialog.setContentView(mylayout);
+
+        TextView title = (TextView) dialog.findViewById(R.id.title);
+        TextView desc = (TextView) dialog.findViewById(R.id.srv_desc);
+
+        final SparseBooleanArray selected = adapter1
+                .getSelectedIds();//Get selected ids
+
+        if (selected.size() == adapter1.getItemCount()) {
+            title.setText("Confirm delete All");
+            desc.setText("Are you sure you want delete all video files!");
+        } else {
+            title.setText("Confirm delete");
+            desc.setText("delete " + selected.size() + " video files");
+        }
+
+        Button btnNo = (Button) dialog.findViewById(R.id.srv_btnNo);
+        Button btnYes = (Button) dialog.findViewById(R.id.srv_btnYes);
+
+        btnNo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("RestrictedApi")
+            @Override
+            public void onClick(View v) {
+                /**Delete Rows*/
+                //Loop all selected ids
+                for (int i = (selected.size() - 1); i >= 0; i--) {
+                    if (selected.valueAt(i)) {
+                        //If current id is selected remove the item via key
+                        File fdelete = new File(Environment.getExternalStorageDirectory() + "/Screen Recording/" + listString.get(selected.keyAt(i)));
+                        fdelete.delete();
+                        arraylist.remove(selected.keyAt(i));
+                        adapter1.remove(selected.keyAt(i));
+                        mainActivity.RecyclerAdapter();
+                        //Snackbar.make(view, selected.size() + " item deleted.", Snackbar.LENGTH_LONG).show();
+                    }
+                }
+                /** for full Directory delete */
+//                File dir = new File(Environment.getExternalStorageDirectory() + "/Screen Recording/");
+//                if (dir.isDirectory()) {
+//                    String[] children = dir.list();
+//                    for (int i = 0; i < children.length; i++) {
+//                        new File(dir, children[i]).delete();
+//                    }
+//                }
+                adapter1.notifyDataSetChanged();
+                mainActivity.RecyclerAdapter();
+                Toast.makeText(context, selected.size() + " files are deleted successfully",
+                        Toast.LENGTH_LONG).show();
+                mainActivity.mActionMode.finish();
+                dialog.dismiss();
+            }
+        });
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.dialog);
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation3;
+        dialog.show();
+    }
+}

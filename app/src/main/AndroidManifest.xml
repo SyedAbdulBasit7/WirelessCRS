@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.wirelesscrs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".Wi_Lect.Lecture"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/LectAppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Results_section.view_de_result"></activity>
+        <!-- splash -->
+        <activity android:name=".Splash_Activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Splash_Activity.splash"
+            android:theme="@style/AppTheme.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash_Activity.SplashAnimation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Splash_Activity.Splash_create_quiz"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/> <!-- login,registration and main -->
+        <activity
+            android:name=".Auth_Controller.reset_password"
+            android:theme="@style/AppTheme.Splash"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Auth_Controller.signup"
+            android:theme="@style/AppTheme.Splash"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Auth_Controller.login"
+            android:theme="@style/AppTheme.Splash"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".View.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/> <!-- attempt_quiz -->
+        <activity
+            android:name=".Attempt_Quiz_Section.attempt"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Attempt_Quiz_Section.tests"
+            android:label="@string/title_activity_tests"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Attempt_Quiz_Section.view_de_test"
+            android:screenOrientation="portrait"/> <!-- create_quiz -->
+        <activity
+            android:name=".Create_Quiz.create_quiz"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Create_Quiz.Custom_quiz"
+            android:theme="@style/Theme.AppCompat.NoActionBar" /> <!-- view -->
+        <activity
+            android:name=".View.AddDetails"
+            android:label="@string/title_activity_UPdate"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/> <!-- result -->
+        <activity
+            android:name=".Results_section.ResultsAdmin"
+            android:label="Results:ADMIN"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Results_section.ResultsAdminDetailed"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/> <!-- chat_section -->
+        <activity
+            android:name=".Chat_Section.Chat_Handler"
+            android:label="Chat"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/> <!-- Notification -->
+        <service android:name=".NotificationActivity.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".NotificationActivity.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service android:name=".NotificationActivity.NotificationService" />
+
+        <activity
+            android:name=".Results_section.GetDetailReport"
+            android:label="Detailed Report"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/> <!-- screen_recoder -->
+        <activity
+            android:name=".screen_record.Activity.ControlsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ScreenRecord" />
+        <activity
+            android:name=".screen_record.Activity.SettingsActivity"
+            android:parentActivityName=".screen_record.Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ScreenRecord" />
+        <activity
+            android:name=".screen_record.Activity.RecordingActivity"
+            android:parentActivityName=".screen_record.Activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ScreenRecord" />
+        <activity
+            android:name=".screen_record.Activity.QualityActivity"
+            android:parentActivityName=".screen_record.Activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ScreenRecord" />
+        <activity
+            android:name=".screen_record.Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ScreenRecord" />
+
+        <service
+            android:name=".screen_record.Recorder.RecorderService"
+            android:exported="false" />
+        <service
+            android:name=".screen_record.Recorder.FloatingControlService"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service android:name=".screen_record.Screen.ScreenService" />
+        <service
+            android:name=".screen_record.ScreenOnOffBackgroundService"
+            android:enabled="true" /> <!-- whiteboard -->
+        <activity
+            android:name=".draw.easy_paint"
+            android:launchMode="singleTop"
+            android:theme="@style/whiteBoard" /> <!-- screen_mirroring -->
+        <!-- <activity -->
+        <!-- android:name=".screen_mirroring.mirror_casting" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <!-- dashboard -->
+        <activity
+            android:name=".dashboard_wics"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/> <!-- reminder -->
+        <activity
+            android:name=".reminder.wics_edit_reminder"
+            android:theme="@style/AppTheme.BaseR"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".reminder.wics_add_reminder"
+            android:theme="@style/AppTheme.BaseR"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".reminder.wics_reminder"
+            android:theme="@style/AppTheme.BaseR"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".reminder.AlarmReceiver" />
+        <receiver android:name=".reminder.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver> <!-- lectures -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="ratio_float" />
+
+        <activity android:name=".Wi_Lect.activities.file.view_files_cloud" />
+        <activity android:name=".Wi_Lect.activities.file.upload_file_cloud" />
+        <activity
+            android:name=".Wi_Lect.activities.file.FileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:mimeType="application/x-rar-compressed" />
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/x-7z-compressed" />
+                <data android:mimeType="application/x-tar" />
+                <data android:mimeType="application/gzip" />
+                <data android:mimeType="application/x-tar+gzip" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

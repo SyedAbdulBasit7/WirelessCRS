@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "50223917353",
+    "firebase_url": "https://wirelesscrs.firebaseio.com",
+    "project_id": "wirelesscrs",
+    "storage_bucket": "wirelesscrs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50223917353:android:33eb22a7bf7905aa596f38",
+        "android_client_info": {
+          "package_name": "com.example.wirelesscrs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50223917353-bpkli5nn4to9gdk50jmscb7rs683hksa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wirelesscrs",
+            "certificate_hash": "5ca7c379e27c269ee93397c7eeea11576cfd1780"
+          }
+        },
+        {
+          "client_id": "50223917353-ntjpdjb60ano6jvumsurlqi79ltapg66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB-PObYmgXHNan6u3iespNQxQy1lFRxOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50223917353-ntjpdjb60ano6jvumsurlqi79ltapg66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

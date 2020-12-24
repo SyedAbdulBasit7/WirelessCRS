@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/color_menu"
+        android:icon="@drawable/color"
+        android:title="@string/color"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/size_menu"
+        android:icon="@drawable/size"
+        android:title="@string/brush_size"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/erase_menu"
+        android:icon="@drawable/erase"
+        app:showAsAction="always"
+        android:title="@string/erase">
+    </item>
+    <item
+        android:id="@+id/clear_all_menu"
+        android:icon="@drawable/clear_all"
+        app:showAsAction="ifRoom"
+        android:title="@string/clear_all">
+    </item>
+    <item
+        android:id="@+id/emboss_menu"
+        android:icon="@drawable/emboss"
+        app:showAsAction="ifRoom"
+        android:title="@string/emboss">
+    </item>
+    <item
+        android:id="@+id/blur_menu"
+        android:icon="@drawable/blur"
+        app:showAsAction="ifRoom"
+        android:title="@string/blur">
+    </item>
+
+    <item
+        android:id="@+id/open_image_menu"
+        android:icon="@drawable/import_image"
+        app:showAsAction="ifRoom"
+        android:title="@string/open_image">
+    </item>
+    <item
+        android:id="@+id/fill_background_with_color"
+        android:icon="@drawable/fill_background_with_color"
+        app:showAsAction="ifRoom"
+        android:title="@string/fill_background_with_color">
+    </item>
+    <item
+        android:id="@+id/save_menu"
+        app:showAsAction="ifRoom"
+        android:title="@string/save">
+    </item>
+
+
+</menu>

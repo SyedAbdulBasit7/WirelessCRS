@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:orderInCategory="1">
+        <item
+            android:id="@+id/lect_nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/lect_nav_path"
+            android:icon="@drawable/ic_find_in_page_black_24dp"
+            android:title="@string/nav_path" />
+    </group>
+
+    <item
+        android:orderInCategory="2"
+        android:title="@string/nav_bookmarks">
+
+        <!--suppress AndroidElementNotAllowed -->
+        <group
+            android:id="@+id/lect_bookmarksMenuGroup"
+            android:orderInCategory="0" />
+
+        <!--suppress AndroidElementNotAllowed -->
+        <item
+            android:id="@+id/lect_nav_add_bookmark"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:orderInCategory="1"
+            android:title="@string/add_bookmark" />
+    </item>
+
+    <group android:orderInCategory="3">
+        <item
+            android:id="@+id/lect_upload_file"
+            android:icon="@drawable/ic_upload_file_black"
+            android:title="Upload File" />
+        <item
+            android:id="@+id/lect_view_file"
+            android:icon="@drawable/ic_view_file_cloud_black"
+            android:title="View Files" />
+    </group>
+
+
+</menu>

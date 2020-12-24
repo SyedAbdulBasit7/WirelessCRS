@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Video Bit Rate"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="450dp">
+
+                <RadioGroup
+                    android:id="@+id/srv_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checkedButton="@id/srv_c"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/srv_r1"
+                        style="@style/MyRadioButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingStart="20dp"
+                        android:text="24 Mbps"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/srv_r2"
+                        style="@style/MyRadioButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingStart="20dp"
+                        android:text="20 Mbps"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/srv_r3"
+                        style="@style/MyRadioButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingStart="20dp"
+                        android:text="18 Mbps"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/srv_r4"
+                        style="@style/MyRadioButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingStart="20dp"
+                        android:text="16 Mbps"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/srv_r5"
+                        style="@style/MyRadioButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingStart="20dp"
+                        android:text="15 Mbps"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/srv_r6"
+                        style="@style/MyRadioButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingStart="20dp"
+                        android:text="12 Mbps"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/srv_r7"
+                        style="@style/MyRadioButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingStart="20dp"
+                        android:text="10 Mbps"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/srv_r8"
+                        style="@style/MyRadioButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingStart="20dp"
+                        android:text="8 Mbps"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/srv_r9"
+                        style="@style/MyRadioButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingStart="20dp"
+                        android:text="6 Mbps"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/srv_r10"
+                        style="@style/MyRadioButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="4 Mbps"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/srv_btnNo"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:textColor="@color/btnColor"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/srv_btnYes"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Apply"
+                    android:textColor="@color/btnColor"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

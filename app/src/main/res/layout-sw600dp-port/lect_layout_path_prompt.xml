@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lect_pathTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/prompt_margin"
+        android:layout_marginStart="@dimen/prompt_margin"
+        android:layout_marginTop="@dimen/file_view_margin"
+        android:text="@string/path_input_hint"
+        android:layout_toEndOf="@id/lect_dialogIcon"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/lect_destinationPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lect_pathTextView"
+        android:layout_marginBottom="@dimen/file_view_margin"
+        android:layout_marginEnd="@dimen/prompt_margin"
+        android:layout_marginStart="@dimen/prompt_margin"
+        android:inputType="textNoSuggestions"
+        android:textSize="24sp"/>
+    <ImageView
+        android:id="@+id/lect_dialogIcon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:tint="?android:attr/textColorPrimary"
+        android:layout_marginTop="@dimen/file_view_margin"
+        android:layout_marginStart="@dimen/file_view_margin"
+        android:contentDescription="@string/dialog_icon_desc" />
+</RelativeLayout>
